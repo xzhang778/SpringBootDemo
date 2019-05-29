@@ -1,4 +1,4 @@
-package brian.boot.template.rest;
+package brian.template.boot.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
