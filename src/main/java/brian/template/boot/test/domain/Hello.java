@@ -1,18 +1,32 @@
 package brian.template.boot.test.domain;
 
 public class Hello {
-	private String text;
+	private String name;
+	private int age;
 
-	public Hello(String text) {
+	public Hello() {}
+	
+	public Hello(String name, int age) {
 		super();
-		this.text = text;
+		this.name = name;
+		this.age = age;
 	}
 
-	public String getText() {
-		return text;
+	public String getName() {
+		return name;
 	}
 
-	public void setText(String text) {
-		this.text = text;
+	public void setName(String name) {
+		this.name = name;
 	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	
 }

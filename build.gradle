@@ -23,6 +23,8 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("io.springfox:springfox-swagger2")
+    compile("io.springfox:springfox-swagger-uis")
     
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
