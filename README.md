@@ -2,15 +2,16 @@
 
 Simple Template for Spring RESTfull Service
 
-
 ## Simple RESTful API
 
-Very basic way to create a RESTful API
+__"/"__ : will return 
+__"/search/{name}"__ : will return search result. (We have static names 'Bob', 'Will', 
+and 'Barnie')
 
-## RESTful Service by Swagger
 
-Controller with Swagger 
+## RESTful Service API by Swagger
 
-## Contract-First with Swagger
-
-Generated Controller classes from Swagger
+```
+    compile('io.springfox:springfox-swagger2:2.9.2')        // To usw Swagger
+    compile('io.springfox:springfox-swagger-ui:2.9.2')      // To show Swagger UI
+```
