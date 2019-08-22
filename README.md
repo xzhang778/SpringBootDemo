@@ -63,10 +63,10 @@ After start this application, the following url will display the screenshot belo
 [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 
-![alt swagger ui](docs/images/swagger-ui.png)
+![alt swagger ui](docs/images/swagger-ui.PNG)
 
 #### How to use Swagger UI ####
 You can open the each service by clicking and click on "Try it out" button. It will let you enter the parameters.
 Then hit "Execute" button below. You will see the result below.
 
-![alt swagger ui opened service](docs/images/swagger-ui-opened-service.png)
+![alt swagger ui opened service](docs/images/swagger-ui-opened-service.PNG)
