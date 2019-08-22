@@ -56,6 +56,13 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 
 ```
 
+## How to run ##
+You can use either IDE or Command line. For the command line, type the following command
+
+```
+./gradlew clean build bootRun
+```
+
 ## Swagger UI ##
 After start this application, the following url will display the screenshot below
 
