@@ -1,6 +1,6 @@
 # Spring Boot Template - RESTful API
 
-Simple Template for Spring RESTfull Service.
+Simple Template for Spring RESTfull Service with automatically generated(bottom-up approach) Swagger UI. Please check the Git branch next-step link to see how it will be implemented (with more features).
 
 
 
