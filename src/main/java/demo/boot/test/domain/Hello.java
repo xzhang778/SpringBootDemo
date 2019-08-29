@@ -1,4 +1,4 @@
-package brian.template.boot.test.domain;
+package demo.boot.test.domain;
 
 public class Hello {
 	private String name;
