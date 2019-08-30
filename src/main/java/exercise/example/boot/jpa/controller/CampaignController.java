@@ -50,8 +50,11 @@ public class CampaignController {
 	}
 	
 	@PutMapping(value="/campaignmessage/{campaignId}")
-	public ResponseEntity<Campaign>  updateCampaign(@RequestBody Campaign campaign)
+	public ResponseEntity<Campaign>  updateCampaign(@PathVariable("campaignId") int campaignId,@RequestBody Campaign campaignNew)
 	{
+		Campaign campaign = service.getCampaign(campaignId);
+		campaign.setCustomerName(campaignNew.getCustomerName());
+		campaign.setMessageText(campaignNew.getMessageText());
 		campaign = service.saveCampaign(campaign);
 		return new ResponseEntity<>( campaign, HttpStatus.OK );
 	} 
