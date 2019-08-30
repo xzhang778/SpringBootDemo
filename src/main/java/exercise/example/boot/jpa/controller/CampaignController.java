@@ -40,7 +40,7 @@ public class CampaignController {
 		return new ResponseEntity<>( campaign, HttpStatus.OK );
 	}
 	
-	@DeleteMapping(value="/campaignmessage/{campaignmessage}")
+	@DeleteMapping(value="/campaignmessage/{campaignId}")
 	public ResponseEntity<Campaign> deleteCampaign(@PathVariable("campaignId") int campaignId)
 	{
 		Campaign campaign = new Campaign();
@@ -49,7 +49,7 @@ public class CampaignController {
 		return new ResponseEntity<>( campaign, HttpStatus.OK );
 	}
 	
-	@PutMapping(value="/campaignmessage/{campaignmessage}")
+	@PutMapping(value="/campaignmessage/{campaignId}")
 	public ResponseEntity<Campaign>  updateCampaign(@RequestBody Campaign campaign)
 	{
 		campaign = service.saveCampaign(campaign);

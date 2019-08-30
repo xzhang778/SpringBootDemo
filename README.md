@@ -9,10 +9,10 @@ Example of JPA Application. Just for the testing purpose, Embedded H2 database i
 * Code Quality : Jacoco
 
 ## Services
-* __/testusers__ - `GET` - Returns all test user accounts includes related posts
-* __/posts__ - `GET` - Returns all posts
-* __/post/{postId}__ - `GET, PUT, DELETE` - GET returns, PUT updates, and DELETE deletes the post 
-* __/post__ - `POST` - Add new post
+* __/campaignmessage__ - `POST` - Create a new Campaign message
+* __/campaignmessage/{campaignId} - `GET` - Get a Campaign message by ID
+* __/campaignmessage/{campaignId}__ - `PUT` - Update a Campaign message by ID
+* __/campaignmessage/{campaignId} `DELETE` - Delete a Campaign message by ID
 
 ## Initialization
 
