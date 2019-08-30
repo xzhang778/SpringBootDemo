@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.6.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'brian.template.boot'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter'
+	compile 'org.springframework.boot:spring-boot-starter-data-jpa'	// JPA - Hibernate
+	compile 'org.springframework.boot:spring-boot-starter-web' 		// Just so h2 db can run
+    compile('io.springfox:springfox-swagger2:2.9.2')        // To usw Swagger
+    compile('io.springfox:springfox-swagger-ui:2.9.2')      // To show Swagger UI
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+	testCompile('junit:junit')
+	testCompile('org.assertj:assertj-core')
+
+	runtime 'com.h2database:h2'		// Test Database
+}
